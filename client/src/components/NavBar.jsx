@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 
-const Navbar = () => {
+const NavBar = () => {
       const { openSignIn } = useClerk();
     const { user } = useUser();
 
@@ -56,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
