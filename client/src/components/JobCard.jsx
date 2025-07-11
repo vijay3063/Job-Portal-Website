@@ -1,18 +1,18 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const JobCard = ({ job }) => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="border p-4 sm:p-6 rounded-2xl shadow-md transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 group bg-white w-full">
       <div className="flex justify-between items-center">
         <img
-          className="h-8 sm:h-10"
-          src={assets.company_icon}
-          alt="Company Logo"
+          className="h-8 sm:h-10 object-contain bg-white rounded-md border p-1"
+          src={job.companyId?.image || assets.company_icon}
+          alt={job.companyId?.name || "Company Logo"}
+          onError={(e) => (e.target.src = assets.company_icon)}
         />
       </div>
 
@@ -35,10 +35,22 @@ const JobCard = ({ job }) => {
       ></p>
 
       <div className="mt-5 flex flex-col sm:flex-row gap-3 text-sm">
-        <button onClick={() => {navigate(`/apply-job/${job._id}`); scrollTo(0,0)}} className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-200 w-full sm:w-auto">
+        <button
+          onClick={() => {
+            navigate(`/apply-job/${job._id}`);
+            scrollTo(0, 0);
+          }}
+          className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-200 w-full sm:w-auto"
+        >
           Apply Now
         </button>
-        <button onClick={() => {navigate(`/apply-job/${job._id}`); scrollTo(0,0)}} className="border border-gray-500 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-100 transition duration-200 w-full sm:w-auto">
+        <button
+          onClick={() => {
+            navigate(`/apply-job/${job._id}`);
+            scrollTo(0, 0);
+          }}
+          className="border border-gray-500 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-100 transition duration-200 w-full sm:w-auto"
+        >
           Know More
         </button>
       </div>
