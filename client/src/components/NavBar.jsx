@@ -16,7 +16,6 @@ const NavBar = () => {
   return (
     <nav className="relative backdrop-blur-lg bg-white/70 shadow-md border-b border-white/40 sticky top-0 z-50">
       <div className="container px-4 2xl:px-20 mx-auto flex justify-between items-center py-3">
-        
         {/* Logo */}
         <div
           className="flex-shrink-0 cursor-pointer group"
