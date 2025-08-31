@@ -91,7 +91,7 @@ const Footer = () => {
           <h3 className="text-gray-900 font-semibold mb-2">Contact</h3>
           <p className="text-gray-600 text-sm">NIT MZ, Aizawl, Mizoram</p>
           <p className="text-gray-600 text-sm">
-            masirapavijayvardhan@gmail.com
+            saivivek2809@gmail.com
           </p>
         </div>
       </div>
@@ -99,10 +99,9 @@ const Footer = () => {
       {/* Divider + Bottom */}
       <div className="relative mt-8 border-t border-gray-300/50 pt-4 text-center text-xs text-gray-500">
         © {new Date().getFullYear()}{" "}
-        <span className="text-blue-600 font-semibold">@key.viapractice();</span>{" "}
         | Developed by{" "}
         <span className="text-gray-900 font-medium">
-          VIJAY VARDHAN MASIRAPA
+          Tata Sai Vivek Vardhan
         </span>
         <br />
         Made with ❤️ for the developer community
