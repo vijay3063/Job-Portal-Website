@@ -91,7 +91,7 @@ const Footer = () => {
           <h3 className="text-gray-900 font-semibold mb-2">Contact</h3>
           <p className="text-gray-600 text-sm">NIT MZ, Aizawl, Mizoram</p>
           <p className="text-gray-600 text-sm">
-            saivivek2809@gmail.com
+            masirapavijayvardhan@gmail.com
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ const Footer = () => {
         © {new Date().getFullYear()}{" "}
         | Developed by{" "}
         <span className="text-gray-900 font-medium">
-          Tata Sai Vivek Vardhan
+          Masirapa Vijay Vardhan
         </span>
         <br />
         Made with ❤️ for the developer community
