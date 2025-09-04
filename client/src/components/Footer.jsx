@@ -98,7 +98,7 @@ const Footer = () => {
 
       {/* Divider + Bottom */}
       <div className="relative mt-8 border-t border-gray-300/50 pt-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()}{" "}
+        © 2024
         | Developed by{" "}
         <span className="text-gray-900 font-medium">
           Masirapa Vijay Vardhan
